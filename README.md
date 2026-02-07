@@ -30,7 +30,7 @@ Modelado de alumnos y profesores mediante:
 - JSON Schema
 - Documento JSON válido
 
-- Ejercicio 2
+Ejercicio 2
 Sindicación de contenidos:
 - Feed RSS 2.0
 - Feed Atom 1.0
