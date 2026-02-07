@@ -7,7 +7,7 @@ Repositorio con la resolución completa de la práctica de Lenguajes de Marcas.
 Estructura del repositorio
 
 - Práctica1/
--   ejercicio1/
+-     ejercicio1/
 -       fp.dtd
   -->cifp.xml
   -->cifp.xsd
