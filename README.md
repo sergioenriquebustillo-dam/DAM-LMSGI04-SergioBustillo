@@ -6,7 +6,7 @@ Repositorio con la resolución completa de la práctica de Lenguajes de Marcas.
 
 Estructura del repositorio
 
-Práctica1/
+- Práctica1/
 /ejercicio1/
 //cifp.dtd
 //cifp.xml
@@ -17,7 +17,7 @@ cifp.json
 ejercicio2/
 cotxes.rss.xml
 cotxes.atom.xml
-README.md
+- README.md
 
 Descripción de los ejercicios
 
