@@ -8,7 +8,7 @@ Estructura del repositorio
 
 - Práctica1/
 -     ejercicio1/
--       fp.dtd
+- fp.dtd
   -->cifp.xml
   -->cifp.xsd
   -->cifp_xsd.xml
