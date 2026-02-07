@@ -44,7 +44,7 @@ Todos los archivos han sido validados correctamente:
 
 Vídeo Loom
 Enlace al vídeo explicativo:
-PEGAR AQUÍ EL LINK DE LOOM
+(https://www.loom.com/share/ff8239e81b904a4bb3c0987e6a58af7d)
 
 Entrega
 Este repositorio contiene todos los archivos solicitados en la práctica.
