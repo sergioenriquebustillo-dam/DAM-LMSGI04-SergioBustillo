@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cifp SYSTEM "cifp.dtd">
+
+<cifp>
+
+   <alumne id="1">
+      <nom>Joan</nom>
+      <llinatges>Pérez García</llinatges>
+      <data_naixement>2002-05-14</data_naixement>
+      <correu>joan.perez@cifp.cat</correu>
+      <telefon>600123456</telefon>
+      <adreca>Carrer Major 10</adreca>
+      <data_matricula>2023-09-15</data_matricula>
+      <curs>DAM</curs>
+   </alumne>
+
+   <alumne id="2">
+      <nom>Laura</nom>
+      <llinatges>Martí López</llinatges>
+      <data_matricula>2022-09-20</data_matricula>
+      <curs>DAW</curs>
+   </alumne>
+
+   <professor id="10">
+      <nom>Maria</nom>
+      <llinatges>Font Serra</llinatges>
+      <correu>maria.font@cifp.cat</correu>
+      <data_incorporacio>2015-09-01</data_incorporacio>
+      <departament>Informatica</departament>
+
+      <assignatura id_assignatura="100">
+         <nom_assignatura cicle="DAM">Bases de Dades</nom_assignatura>
+         <data_inici>2023-09-01</data_inici>
+         <data_final>2024-06-30</data_final>
+      </assignatura>
+
+      <assignatura id_assignatura="101">
+         <nom_assignatura cicle="DAW">Programacio Web</nom_assignatura>
+      </assignatura>
+   </professor>
+
+</cifp>

@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CIFP Pau Casesnoves",
+  "type": "object",
+
+  "properties": {
+    "cifp": {
+      "type": "object",
+
+      "properties": {
+        "alumne": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/alumne" }
+        },
+
+        "professor": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/professor" }
+        }
+      },
+
+      "additionalProperties": false
+    }
+  },
+
+  "required": ["cifp"],
+
+  "definitions": {
+
+    "tipusCurs": {
+      "type": "string",
+      "enum": ["DAM", "DAW", "ASIX", "SMX", "SEIA", "ER", "AUT"]
+    },
+
+    "tipusDepartament": {
+      "type": "string",
+      "enum": ["Informatica", "Electricitat", "Automocio"]
+    },
+
+    "assignatura": {
+      "type": "object",
+
+      "properties": {
+        "id_assignatura": { "type": "integer" },
+        "nom_assignatura": { "type": "string" },
+        "cicle": { "$ref": "#/definitions/tipusCurs" },
+        "data_inici": { "type": "string" },
+        "data_final": { "type": "string" }
+      },
+
+      "required": ["id_assignatura", "nom_assignatura", "cicle"],
+      "additionalProperties": false
+    },
+
+    "personaBase": {
+      "type": "object",
+
+      "properties": {
+        "id": { "type": "integer" },
+        "nom": { "type": "string" },
+        "llinatges": { "type": "string" },
+        "data_naixement": { "type": "string" },
+        "correu": { "type": "string" },
+        "telefon": { "type": "string" },
+        "adreca": { "type": "string" }
+      },
+
+      "required": ["id", "nom", "llinatges"]
+    },
+
+    "alumne": {
+      "allOf": [
+        { "$ref": "#/definitions/personaBase" },
+        {
+          "type": "object",
+
+          "properties": {
+            "data_matricula": { "type": "string" },
+            "curs": { "$ref": "#/definitions/tipusCurs" }
+          },
+
+          "required": ["data_matricula", "curs"]
+        }
+      ]
+    },
+
+    "professor": {
+      "allOf": [
+        { "$ref": "#/definitions/personaBase" },
+        {
+          "type": "object",
+
+          "properties": {
+            "data_incorporacio": { "type": "string" },
+            "departament": { "$ref": "#/definitions/tipusDepartament" },
+
+            "assignatura": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/assignatura" }
+            }
+          },
+
+          "required": ["data_incorporacio", "departament"]
+        }
+      ]
+    }
+  }
+}
